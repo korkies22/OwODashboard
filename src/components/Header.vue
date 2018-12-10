@@ -69,5 +69,6 @@ button{
   border-radius: 10%;
   height: 2.5rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 </style>

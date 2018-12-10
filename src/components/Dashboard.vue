@@ -1,7 +1,10 @@
 <template>
   <div class="dashboard">
     <Header></Header>
-    <Nav class="Nav"></Nav>
+    <div class="dashboard__content">
+      <Nav class="Nav"></Nav>
+      <router-view class="dashboard__sub"></router-view>
+    </div>
   </div>
 </template>
 
@@ -23,8 +26,18 @@ export default {
 <style scoped lang="scss">
 
 .Nav{
-  max-width: 20%;
-  max-height: calc(100vh - 4.5rem);
+  width: 20%;
+  height: calc(100vh - 4.5rem);
   overflow-y: scroll;
+  display:inline-block;
+}
+
+.dashboard__content{
+  display:flex;
+}
+
+.dashboard__sub{
+  width:80%;
+  display:inline-block;
 }
 </style>
