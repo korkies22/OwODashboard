@@ -10,12 +10,9 @@
       <li class="navigation__item">
         <router-link tag="a" class="navigation__link" to="/dashboard/events">Agregar eventos</router-link>
       </li>
-      <li class="navigation__item">
+      <!--<li class="navigation__item">
         <router-link tag="a" class="navigation__link" to="/dashboard/sleep">Tiempo de sueño</router-link>
-      </li>
-      <li class="navigation__item">
-        <router-link tag="a" class="navigation__link" to="/dashboard/suggestions">Horas de estudio sugeridas</router-link>
-      </li>
+      </li>-->
     </ul>
   </nav>
 </template>

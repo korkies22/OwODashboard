@@ -7,7 +7,7 @@
     <column-chart :data="distributionManualCategory"></column-chart>
 
     <h1> Manual Interaction overall </h1>
-    <column-chart :data="intervals"></column-chart>
+    <column-chart :data="distributionManual"></column-chart>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
     requestHistogram: function (container, path) {
       const timeout = 10000;
       const makeRequest = () => {
-        axios.get(`http://0.0.0.0:9000${path}`)
+        axios.get(`http://13.57.248.240:9000${path}`)
         .then(response => {
           const data = response.data.data;
           container.splice(0, container.length);
