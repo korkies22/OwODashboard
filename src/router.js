@@ -16,6 +16,13 @@ const router= new Router({
         {
           // UserProfile will be rendered inside User's <router-view>
           // when /user/:id/profile is matched
+          path: '',
+          name: 'CampusAccess',
+          component:  () => import(/* webpackChunkName: "about" */ './components/dashboards/CampusAccess.vue')
+        },
+        {
+          // UserProfile will be rendered inside User's <router-view>
+          // when /user/:id/profile is matched
           path: 'botInteraction',
           name: 'BotInteraction',
           component:  () => import(/* webpackChunkName: "about" */ './components/dashboards/BotInteraction.vue')

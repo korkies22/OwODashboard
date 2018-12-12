@@ -39,5 +39,7 @@ export default {
 .dashboard__sub{
   width:80%;
   display:inline-block;
+  height:calc(100vh - 4.5rem);
+  overflow-y: scroll;
 }
 </style>
