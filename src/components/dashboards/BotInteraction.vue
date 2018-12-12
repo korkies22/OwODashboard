@@ -5,7 +5,7 @@
 
 <script>
 // @ is an alias to /src
-import store from '@/store'
+// import store from '@/store'
 export default {
   name: 'BotInteraction'
 }
